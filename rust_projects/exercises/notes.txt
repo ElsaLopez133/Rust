@@ -1,0 +1,1 @@
+Exercises are form: https://google.github.io/comprehensive-rust/types-and-values/exercise.html
