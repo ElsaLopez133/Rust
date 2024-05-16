@@ -1,0 +1,15 @@
+Here's how thread::spawn works:
+
+1. Creating a New Thread: When you call thread::spawn, you provide a closure or function 
+that represents the code you want to execute in the new thread.
+
+2. Starting Execution: The thread::spawn function starts a new thread in the operating system, 
+and the provided closure or function is executed in that thread.
+
+3. Asynchronous Execution: The code inside the closure or function runs concurrently with the rest 
+of your program. This means that your main program continues to execute while the code inside the 
+spawned thread is running independently.
+
+4. Communication: Threads can communicate with each other through various mechanisms, such as channels 
+or shared data structures. However, Rust's ownership rules ensure that data is accessed safely across 
+threads, preventing data races and other concurrency issues.
